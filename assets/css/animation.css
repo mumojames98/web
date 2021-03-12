@@ -1,0 +1,388 @@
+/**
+* Author: James Mumo
+*/
+
+
+/*---------- asantantey logo ------*/
+.asanteylogo{
+    position: relative;
+    font-size: 9vw;
+    color: #252839;
+    -webkit-text-stroke: 0.3vw #383d52;
+}
+.asanteylogo::before{
+    content: attr(asanteylogo);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    color: #01fe87;
+    -webkit-text-stroke: 0vw #383d52;
+    border-right: 2px solid #01fe87;
+    
+    animation: animate 3s linear infinite;
+}
+@keyframes animate
+{
+    0%, 10%, 100%{
+        width: 0%;
+        
+    }
+    70%, 90%{
+        width: 100%;
+    }
+}
+
+/* --------type writer effect------ */
+ .typed-text{
+     font-weight: 100;
+     color: rgb(244, 247, 243) !important ;
+
+ }
+
+ .cursor{
+     display: inline-block;
+     width: 3px;
+     background-color:  rgb(221, 23, 23) ;
+     margin-left: 0.1rem;
+     animation: blink 2s infinite;
+ }
+
+ @keyframes blink
+ {
+     0%{ background-color: white;}
+     25%{ background-color: white;}
+     47%{ background-color: white;}
+     47%{ background-color: transparent;}
+     50%{ background-color: red;}
+     75%{ background-color: red;}
+     95%{ background-color: red;}    
+      97%{ background-color: transparent;}
+    100%{ background-color: white;}
+
+     
+ }
+
+
+ /*----------------3D CARD VIEWER ---------------------*/
+ .services {
+  background: #0b0d86;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom right, #000099 0%, #990033 100%); 
+background: linear-gradient(to bottom right, #000099 0%, #990033 100%); 
+
+  }
+  
+  
+  .product_item{
+    position: relative;
+    transform-style: preserve-3d;
+    display: flex;
+    height: 400px;
+    width: 18em;
+    background: linear-gradient(-45deg, #fe0847, #feae3f);
+    margin: 5px auto;
+    padding: 40px 20px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, .2);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border:1px solid green;
+    z-index: 10;
+  }
+  .img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 300px;
+    background: #fff;
+    z-index: 11;
+    transition: 0.5s;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%,-50%,0px) rotate(-15deg);}
+
+  
+  .price{
+    position: absolute;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    top: -22px;
+    text-align: center;
+    margin: 0;
+    background: linear-gradient(-75deg, #02473e, #023258);
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 300;
+    font-size: 18px;
+    width: 100%;
+    transform-style: preserve-3d;
+    transform: translate3d(0,0,30px);
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 10;
+  }
+  @media (max-width: 1024px) {
+    #price {
+opacity: 1;      }
+  }
+  .product_item:hover .price{
+    top: 11px;
+    opacity: 1;
+  }
+  
+.thename{
+  position: absolute;
+  bottom: 20px; 
+  width: fit-content;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+  background: linear-gradient(-75deg, #02473e, #023258);
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 20px;
+  width: 100%;
+  transform-style: preserve-3d;
+  transform: translate3d(0,0,30px);
+  transition: 0.5s;
+  opacity: 1;
+  z-index: 10;
+  }
+  @media (min-width: 1024px) {
+    #thename {
+opacity: 1;      }
+  }
+  .product_item:hover .thename{
+  bottom: 0;
+  opacity: 0;
+  }
+
+  .the-buy{
+    position: absolute;
+    bottom: 0; 
+    left: 50%;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%,0,70px);
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    background: rgb(3, 5, 100);
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 10;
+    }
+    @media (min-width: 1024px) {
+      #the-buy {
+opacity: 1;      }
+    }
+    .product_item:hover .the-buy{
+    bottom: 20px;
+    opacity: 1;
+    }
+
+  .img-box{
+    transform: translateZ(20px);
+    border:1px solid rgb(10, 198, 255);
+    z-index:11;
+  }
+  
+
+ 
+  .product_item .img-box1{
+    position: absolute;
+    top: 35%;  
+    left: 50%;
+    width: 16.5em;
+    height: 250px;
+    border-radius: 2%;
+    transition: 0.5s;
+    background-image: url(../img/portfolio/portfolio_4.jpg);
+    background-position: center;
+    background-size: cover;
+    transform-style: preserve-3d;
+    z-index: 10;
+    opacity: 1;
+    transform: translate3d(-50%,-50%,60px);
+    }
+  .product_item:hover .img-box1{
+    position: absolute;
+    top: 45%;  
+    left: 50%;
+    width: 300px;
+    height: 250px;
+    border-radius: 1%;
+    transition: 0.5s;
+    background-image: url(../img/portfolio/portfolio_4.jpg);
+    background-position: center;
+    background-size: cover;
+    transform-style: preserve-3d;
+    z-index: 10;
+    opacity: 1;
+    transform: translate3d(-50%,-50%,60px);
+    }
+    
+   
+ 
+  .product_item .img-box2{
+    position: absolute;
+    top: 35%;  
+    left: 50%;
+    width: 16.5em;
+    height: 250px;
+    border-radius: 2%;
+    transition: 0.5s;
+    background-image: url(../img/portfolio/portfolio_3.jpg);
+    background-position: center;
+    background-size: cover;
+    transform-style: preserve-3d;
+    z-index: 10;
+    opacity: 1;
+    transform: translate3d(-50%,-50%,60px);
+    }
+  .product_item:hover .img-box2{
+    position: absolute;
+    top: 45%;  
+    left: 50%;
+    width: 300px;
+    height: 250px;
+    border-radius: 1%;
+    transition: 0.5s;
+    background-image: url(../img/portfolio/portfolio_3.jpg);
+    background-position: center;
+    background-size: cover;
+    transform-style: preserve-3d;
+    z-index: 10;
+    opacity: 1;
+    transform: translate3d(-50%,-50%,60px);
+    }
+    
+  
+
+ 
+    .product_item .img-box3{
+      position: absolute;
+      top: 35%;  
+      left: 50%;
+      width: 16.5em;
+      height: 250px;
+      border-radius: 2%;
+      transition: 0.5s;
+      background-image: url(../img/asantey-hero-img.png);
+      background-position: center;
+      background-size: cover;
+      transform-style: preserve-3d;
+      z-index: 10;
+      opacity: 1;
+      transform: translate3d(-50%,-50%,60px);
+      }
+    .product_item:hover .img-box3{
+      position: absolute;
+      top: 45%;  
+      left: 50%;
+      width: 300px;
+      height: 250px;
+      border-radius: 1%;
+      transition: 0.5s;
+      background-image: url(../img/asantey-hero-img.png);
+      background-position: center;
+      background-size: cover;
+      transform-style: preserve-3d;
+      z-index: 10;
+      opacity: 1;
+      transform: translate3d(-50%,-50%,60px);
+      }
+      
+  
+
+ 
+    .product_item .img-box4{
+      position: absolute;
+      top: 35%;  
+      left: 50%;
+      width: 16.5em;
+      height: 250px;
+      border-radius: 2%;
+      transition: 0.5s;
+      background-image: url(../img/asantey-hero-img.png);
+      background-position: center;
+      background-size: cover;
+      transform-style: preserve-3d;
+      z-index: 10;
+      opacity: 1;
+      transform: translate3d(-50%,-50%,60px);
+      }
+    .product_item:hover .img-box4{
+      position: absolute;
+      top: 45%;  
+      left: 50%;
+      width: 300px;
+      height: 250px;
+      border-radius: 1%;
+      border: transparent;
+      transition: 0.5s;
+      background-image: url(../img/asantey-hero-img.png);
+      background-position: center;
+      background-size: cover;
+      transform-style: preserve-3d;
+      z-index: 10;
+      opacity: 1;
+      transform: translate3d(-50%,-50%,60px);
+      }
+      
+  .product_item .img{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      max-width: 300px;
+      background: rgb(255, 255, 255);
+      z-index: 11;
+      transition: 0.5s;
+      transform-style: preserve-3d;
+      transform: translate3d(-50%,-50%,0px) rotate(-15deg);
+      }
+  /*--------------------animated border--- */
+
+
+  #gradient_box {
+    width: 100%;
+    height: inherit;
+  }
+  .gradient-border {
+    --borderWidth: 5px;
+    position: relative;
+    border-radius: var(--borderWidth);
+  }
+  .gradient-border:after {
+    content: '';
+    position: absolute;
+    top: calc(-1 * var(--borderWidth));
+    left: calc(-1 * var(--borderWidth));
+    height: calc(100% + var(--borderWidth) * 2);
+    width: calc(100% + var(--borderWidth) * 2);
+    background: linear-gradient(60deg, #169b0a, #0d109e, #c91111, #e0c62e, #048383, #102dad, #07b39b, #6fba82);
+    border-radius: calc(2 * var(--borderWidth));
+    z-index: -1;
+    animation: animatedgradient 3s ease alternate infinite;
+    background-size: 300% 300%;
+  }
+  
+  
+  @keyframes animatedgradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  
+  

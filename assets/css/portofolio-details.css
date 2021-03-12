@@ -1,0 +1,166 @@
+.portofolio_page_item{
+width: 100%;
+    height: 80vh;
+    padding: 0 0 0 0;
+    position: relative;
+}
+
+
+
+
+
+
+
+.portofolio_page_img1{
+    background: url("../img/portfolio/portfolio_1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: inherit;
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+}
+.portofolio_page_img2{
+    background: url("../img/portfolio/portfolio_2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: inherit;
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+  }
+  
+   
+.portofolio_page_img3{
+    background: url("../img/portfolio/portfolio_3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: inherit;
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+  }
+  
+   
+.portofolio_page_img4{
+    background: url("../img/portfolio/portfolio_4.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: inherit;
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+  }
+  
+   
+.portofolio_page_img5{
+    background: url("../img/portfolio/portfolio_5.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: inherit;
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+  }
+  
+   
+.portofolio_page_img6{
+    background: url("../img/portfolio/portfolio_6.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: inherit;
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+  }
+  
+   
+.portofolio_page_img7{
+    background: url("../img/portfolio/baby_sketch.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: inherit;
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+  }
+  
+   
+.portofolio_page_img8{
+    background: url("../img/portfolio/ecg\ group.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: inherit;
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+  }
+  
+   
+.portofolio_page_img9{
+    background: url("../img/portfolio/Web_Design.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: inherit;
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+  }
+  
+   
+.portofolio_page_img10{
+    background: url("../img/portfolio/infant_sketch.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: inherit;
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+  }
+  
+   
+    
+
+.portofolio_data{
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    border: 0px solid red;
+    position: absolute;
+    padding: 0 0 0 0;
+}
+
+.portofolio_data .portfolio_info{
+    background: rgba(7, 153, 104, 0.918);
+    color: #fff;
+    margin: 0;
+}
+
+
+.portofolio_data .portfolio_info .portofolio_img_title{
+align-items: center;
+justify-content: center;
+font-weight: 700;
+text-align: center;
+}
+
